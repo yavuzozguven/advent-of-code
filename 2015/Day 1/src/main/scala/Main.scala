@@ -8,6 +8,15 @@ object Main {
 
     val value = str.foldLeft[Map[Char, Int]](Map.empty)((map, c) => map + (c -> (map.getOrElse(c, 0) + 1)))
 
-    print(value.get('(').get-value.get(')').get)
+    println(value.get('(').get-value.get(')').get)
+
+
+    val i = str.foldLeft(""){(x,k) =>
+      x
+    }
+    println(i)
+
+    println(str.reduce((total,cur) => total+cur))
+
   }
 }
